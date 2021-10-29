@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quieres Ser mi novia</title>
+</head>
+<body>
+    
+<h1>¿QUIERES SER MI NOVIA BB?</h1>
+
+<a href="#" class="button" id="si">SI</a>
+<a href="#" class="button" id="no">NO</a>
+
+
+<style>
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: sans-serif;
+}
+
+h1{
+    margin: auto;
+    margin-top: 200px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    background: #000;
+    color: rgb(252, 252, 252);
+    padding: 20px 35px;
+    font-size: 20px;
+
+}
+
+#si{
+    left:20%;
+    transform: translateY(-50%) translateX(-20%);
+}
+
+#no{
+    left: 20%;
+    transform: translateY(-50%) translateX(-20%);
+} 
+
+</style>
+
+<script>
+
+let si = document.getElementById('si');
+si.addEventListener("click", function(e){
+    alert("Siempre lo supe bb");
+});
+
+let no = document.getElementById('no');
+    no.addEventListener("mousemove", function(e){
+        let x = Math.round( Math.random() * 93 );
+        let y = Math.round( Math.random() * 93 );
+        no.style.left = x + "%";
+        no.style.top = y + "%";
+});
+
+</script>
+
+</body>
+</html>
